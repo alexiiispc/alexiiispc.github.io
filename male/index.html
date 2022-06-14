@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 DIAS</title>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="overlay"><h1>01</h1></div>
+      <span
+        ><p>Día 1</p>
+        como no empezar a decir esto, que no <i>quiero perderte</i> porque
+        gracias a ti estoy dejando de lado los problemas que he tenido dia a
+        dia.
+        <p>
+          Te dedico esta cancion, asi lo haya hecho una vez te la dedicaré mil
+          veces. <i class="bi bi-heart"></i>
+        </p>
+        <a
+          href="https://www.youtube.com/watch?v=JW4-MO05EN8&ab_channel=KevinKaarl-Topic"
+          target="_blank" onclick="playPause()"
+          >Ver canción</a
+        >
+        <p style="margin-top: 8px">Nuestra primera foto juntos</p>
+
+        <img
+          src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/238763565_1462216517477549_5580517492574982999_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a4a2d7&_nc_eui2=AeFrHFaUUHLsvmjyZHq6E6N3dj2_r0ilfJF2Pb-vSKV8keu1-pP0A4kigijk2MowFtYYzJCyUd7y19y8aRWcY2OU&_nc_ohc=HtCH30MtOQYAX-h35ZM&_nc_ht=scontent-lim1-1.xx&oh=00_AT-1HqF-B1gIjqPLm8oTKS8LO4cTFMn67FEkMnodO_TEkA&oe=62A9728B"
+          alt=""
+      /></span>
+    </div>
+
+    <button class="btn-play" onclick="playPause()"><i class="bi bi-play-fill"></i></button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      
+      const music = new Audio();
+      music.src = "assets/audio/quizallevarte.mp3";
+      
+      music.volume = 0.02;
+
+      function playPause() {
+        if($(".btn-play i").attr("class") == "bi bi-pause-fill"){
+            $(".btn-play i").removeClass("bi bi-pause-fill")
+            $(".btn-play i").addClass("bi bi-play-fill")
+            music.pause()
+        }else{
+            $(".btn-play i").removeClass("bi bi-play-fill")
+            $(".btn-play i").addClass("bi bi-pause-fill")
+            music.play()
+        }
+      }
+    </script>
+  </body>
+</html>
